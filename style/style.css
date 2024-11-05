@@ -132,6 +132,8 @@ nav {
   color: var(--second-text-color);
 }
 
+/* Hero Section */
+
 .hero {
   background-image: linear-gradient(to right, #96e9fb, #abecd6);
   display: flex;
@@ -183,6 +185,14 @@ nav {
   color: var(--light-text-color);
 }
 
+.btn-card {
+  border: 1px solid #FFFFFF;
+  color: white;
+}
+
+
+/* Clients Section */
+
 .clients {
   display: flex;
   flex-direction: column;
@@ -195,7 +205,42 @@ nav {
 
 .products-top-week {
   display: grid;
+  gap: 15px;
   padding: 25px 35px;
+  grid-template-rows: 550px;;
+  grid-auto-rows: 400px;
+}
+
+.grid-card {
+  position: relative;
+  max-width: 768px;
+  overflow: hidden;
+  color: var(--light-text-color);
+}
+
+.grid-card img {
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 230px;
+  padding: 60px 40px 35px 40px;
+  background-color: rgba(45, 139, 192, 0.75);
+}
+
+.card-overlay h3 {
+  margin-block-end: 25px;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* PAGE CSS END */
