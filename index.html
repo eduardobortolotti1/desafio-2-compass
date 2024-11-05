@@ -1,53 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio 2</title>
-    <link rel="stylesheet" href="./style/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- Using Montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <address class="contact-us">
-
-        </address>
-        <nav>
-            
-        </nav>
+      <!-- DESKTOP CONTACT AREA -->
+      <!-- <address class="contact-us">
+            <div class="contacts">
+                <div class="phone">(225) 555-0118</div>
+                <div class="email">michelle.rivera@example.com</div>
+            </div>
+            <div class="message">
+                <p>Follow Us and get a chance to win 80% off</p>
+            </div>
+            <div class="social">
+                <p>Follow Us :</p>
+            </div>
+        </address> -->
+      <nav>
+        <div class="top-menu">
+          <div class="logo">
+            <h3>Bandage</h3>
+          </div>
+          <div class="menu-icons">
+            <a href="">
+              <iconify-icon icon="material-symbols:search"></iconify-icon>
+            </a>
+            <a href="">
+              <iconify-icon icon="ion:cart-outline"></iconify-icon>
+            </a>
+            <a href="">
+              <iconify-icon icon="bx:menu-alt-right"></iconify-icon>
+            </a>
+          </div>
+        </div>
+        <div class="ham-menu-expanded invisible mobile-menu">
+          <a href="#Home">Home</a>
+          <a href="#Product">Product</a>
+          <a href="#Pricing">Pricing</a>
+          <a href="#Contact">Contact</a>
+        </div>
+      </nav>
     </header>
-    
+
     <main>
-        <section class="hero">
-             
-        </section>
-        
-        <section class="clients">
+      <section class="hero">
+        <div class="hero-content">
+          <h5>SUMMER 2020</h5>
+          <h1>NEW COLLECTION</h1>
+          <h4>
+            We know how large objects will act, but things on a small scale.
+          </h4>
+          <button class="btn btn-primary">SHOP NOW</button>
+        </div>
+        <img
+          src="/img/hero/hero-cover-1.png"
+          class="hero-image"
+          alt="quirky red-haired woman"
+        />
+      </section>
 
-        </section>
+      <section class="clients">
+        <iconify-icon icon="fa6-brands:hooli"></iconify-icon>
+        <iconify-icon icon="simple-icons:lyft"></iconify-icon>
+        <iconify-icon icon="fa:pied-piper"></iconify-icon>
+        <iconify-icon icon="mage:stripe"></iconify-icon>
+        <iconify-icon icon="mdi:aws"></iconify-icon>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><mask id="lineMdReddit0"><g fill="#fff"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9.42c4.42 0 8 2.37 8 5.29c0 2.92 -3.58 5.29 -8 5.29c-4.42 0 -8 -2.37 -8 -5.29c0 -2.92 3.58 -5.29 8 -5.29Z"/><circle cx="3.94" cy="11.97" r="2.24"/><circle cx="20.06" cy="11.97" r="2.24"/><circle cx="18.45" cy="4.23" r="1.61"/></g><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M12 8.75l1.18 -5.64l5.03 1.07"/><g fill-opacity="0"><circle cx="8.45" cy="13.59" r="1.61" fill-opacity="1"/><circle cx="15.55" cy="13.59" r="1.61" fill-opacity="1"/></g><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M8.47 17.52c0 0 0.94 1.06 3.53 1.06c2.58 0 3.53 -1.06 3.53 -1.06"/></mask><rect width="24" height="24" fill="currentColor" mask="url(#lineMdReddit0)"/></svg>
+    </section>
 
-        <section class="products-top-week">
+      <section class="products-top-week">
+        .card
+      </section>
 
-        </section>
+      <section class="products-bestseller"></section>
 
-        <section class="products-bestseller">
+      <section class="products-featured"></section>
 
-        </section>
+      <section class="products-featured-services"></section>
 
-        <section class="products-featured">
-
-        </section>
-
-        <section class="products-featured-services">
-
-        </section>
-
-        <section class="featured-posts">
-
-        </section>
-
+      <section class="featured-posts"></section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+    <!-- Importing icons from iconify -->
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  </body>
 </html>
