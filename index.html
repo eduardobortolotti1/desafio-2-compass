@@ -62,7 +62,7 @@
           <h4>
             We know how large objects will act, but things on a small scale.
           </h4>
-          <button class="btn btn-primary">SHOP NOW</button>
+          <button class="btn btn-text btn-primary">SHOP NOW</button>
         </div>
         <img
           src="/img/hero/hero-cover-1.png"
@@ -77,34 +77,145 @@
         <iconify-icon icon="fa:pied-piper"></iconify-icon>
         <iconify-icon icon="mage:stripe"></iconify-icon>
         <iconify-icon icon="mdi:aws"></iconify-icon>
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><mask id="lineMdReddit0"><g fill="#fff"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9.42c4.42 0 8 2.37 8 5.29c0 2.92 -3.58 5.29 -8 5.29c-4.42 0 -8 -2.37 -8 -5.29c0 -2.92 3.58 -5.29 8 -5.29Z"/><circle cx="3.94" cy="11.97" r="2.24"/><circle cx="20.06" cy="11.97" r="2.24"/><circle cx="18.45" cy="4.23" r="1.61"/></g><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M12 8.75l1.18 -5.64l5.03 1.07"/><g fill-opacity="0"><circle cx="8.45" cy="13.59" r="1.61" fill-opacity="1"/><circle cx="15.55" cy="13.59" r="1.61" fill-opacity="1"/></g><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M8.47 17.52c0 0 0.94 1.06 3.53 1.06c2.58 0 3.53 -1.06 3.53 -1.06"/></mask><rect width="24" height="24" fill="currentColor" mask="url(#lineMdReddit0)"/></svg>
-    </section>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <mask id="lineMdReddit0">
+            <g fill="#fff">
+              <path
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 9.42c4.42 0 8 2.37 8 5.29c0 2.92 -3.58 5.29 -8 5.29c-4.42 0 -8 -2.37 -8 -5.29c0 -2.92 3.58 -5.29 8 -5.29Z"
+              />
+              <circle cx="3.94" cy="11.97" r="2.24" />
+              <circle cx="20.06" cy="11.97" r="2.24" />
+              <circle cx="18.45" cy="4.23" r="1.61" />
+            </g>
+            <path
+              fill="none"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0.8"
+              d="M12 8.75l1.18 -5.64l5.03 1.07"
+            />
+            <g fill-opacity="0">
+              <circle cx="8.45" cy="13.59" r="1.61" fill-opacity="1" />
+              <circle cx="15.55" cy="13.59" r="1.61" fill-opacity="1" />
+            </g>
+            <path
+              fill="none"
+              stroke="#000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0.8"
+              d="M8.47 17.52c0 0 0.94 1.06 3.53 1.06c2.58 0 3.53 -1.06 3.53 -1.06"
+            />
+          </mask>
+          <rect
+            width="24"
+            height="24"
+            fill="currentColor"
+            mask="url(#lineMdReddit0)"
+          />
+        </svg>
+      </section>
 
       <section class="products-top-week">
-        <div class="grid-card">
-          <img src="img/shop-cards/shop-cards-1.jpg" alt="">
-          <div class="card-overlay">
+        <div class="products-top-week-grid-card">
+          <img src="img/shop-cards/shop-cards-1.jpg" alt="" />
+          <div class="products-top-week-grid-card-overlay">
             <h3>Top Product Of the Week</h3>
-            <button class="btn btn-card">EXPLORE ITEMS</button>
+            <button class="btn btn-text btn-card-products-top-week">EXPLORE ITEMS</button>
           </div>
         </div>
-        <div class="grid-card">
-          <img src="img/shop-cards/shop-cards-2.jpg" alt="">
-          <div class="card-overlay">
+        <div class="products-top-week-grid-card">
+          <img src="img/shop-cards/shop-cards-2.jpg" alt="" />
+          <div class="products-top-week-grid-card-overlay">
             <h3>Top Product Of the Week</h3>
-            <button class="btn btn-card">EXPLORE ITEMS</button>
+            <button class="btn btn-text btn-card-products-top-week">EXPLORE ITEMS</button>
           </div>
         </div>
-        <div class="grid-card">
-          <img src="img/shop-cards/shop-cards-3.jpg" alt="">
-          <div class="card-overlay">
+        <div class="products-top-week-grid-card">
+          <img src="img/shop-cards/shop-cards-3.jpg" alt="" />
+          <div class="products-top-week-grid-card-overlay">
             <h3>Top Product Of the Week</h3>
-            <button class="btn btn-card">EXPLORE ITEMS</button>
+            <button class="btn btn-text btn-card-products-top-week">EXPLORE ITEMS</button>
           </div>
         </div>
       </section>
 
-      <section class="products-bestseller"></section>
+      <!-- I love emmet abbreviations -->
+      <!-- .products-bestseller-grid-card*5>img[src="./img/shop-cards/product-cover-2.png"]+div.products-bestseller-grid-card-body>h5{Graphic Design}+a{English Department}+div.products-bestseller-value>h5.original-value{$16.48}+h5.promotional-value{6.48}-->
+      <section class="products-bestseller" id="products-bestseller">
+        <div class="products-bestseller-intro">
+          <h3>BESTSELLER PRODUCTS</h3>
+          <p>Problems trying to resolve the conflict between</p>
+        </div>
+        <div class="products-bestseller-grid">
+          <div class="products-bestseller-grid-card">
+            <img src="./img/shop-cards/product-cover-1.png" alt="" />
+            <div class="products-bestseller-grid-card-body">
+              <h5>Graphic Design</h5>
+              <a href="">English Department</a>
+              <div class="products-bestseller-value">
+                <h5 class="original-value">$16.48</h5>
+                <h5 class="promotional-value">$6.48</h5>
+              </div>
+            </div>
+          </div>
+          <div class="products-bestseller-grid-card">
+            <img src="./img/shop-cards/product-cover-2.png" alt="" />
+            <div class="products-bestseller-grid-card-body">
+              <h5>Graphic Design</h5>
+              <a href="">English Department</a>
+              <div class="products-bestseller-value">
+                <h5 class="original-value">$16.48</h5>
+                <h5 class="promotional-value">$6.48</h5>
+              </div>
+            </div>
+          </div>
+          <div class="products-bestseller-grid-card">
+            <img src="./img/shop-cards/product-cover-3.png" alt="" />
+            <div class="products-bestseller-grid-card-body">
+              <h5>Graphic Design</h5>
+              <a href="">English Department</a>
+              <div class="products-bestseller-value">
+                <h5 class="original-value">$16.48</h5>
+                <h5 class="promotional-value">$6.48</h5>
+              </div>
+            </div>
+          </div>
+          <div class="products-bestseller-grid-card">
+            <img src="./img/shop-cards/product-cover-4.png" alt="" />
+            <div class="products-bestseller-grid-card-body">
+              <h5>Graphic Design</h5>
+              <a href="">English Department</a>
+              <div class="products-bestseller-value">
+                <h5 class="original-value">$16.48</h5>
+                <h5 class="promotional-value">$6.48</h5>
+              </div>
+            </div>
+          </div>
+          <div class="products-bestseller-grid-card">
+            <img src="./img/shop-cards/product-cover-5.png" alt="" />
+            <div class="products-bestseller-grid-card-body">
+              <h5>Graphic Design</h5>
+              <a href="">English Department</a>
+              <div class="products-bestseller-value">
+                <h5 class="original-value">$16.48</h5>
+                <h5 class="promotional-value">$6.48</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-text btn-products-bestseller">LOAD MORE PRODUCTS</button>
+      </section>
 
       <section class="products-featured"></section>
 

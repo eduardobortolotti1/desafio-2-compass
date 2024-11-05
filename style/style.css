@@ -132,6 +132,12 @@ nav {
   color: var(--second-text-color);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Hero Section */
 
 .hero {
@@ -178,16 +184,19 @@ nav {
 
 .btn-primary {
   font-size: 24px;
-  font-family: Montserrat;
-  font-weight: 700;
   line-height: 32px;
   background-color: var(--primary-color);
   color: var(--light-text-color);
 }
 
-.btn-card {
+.btn-card-products-top-week {
   border: 1px solid #FFFFFF;
   color: white;
+}
+
+.btn-products-bestseller {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 
@@ -211,21 +220,21 @@ nav {
   grid-auto-rows: 400px;
 }
 
-.grid-card {
+.products-top-week-grid-card {
   position: relative;
   max-width: 768px;
   overflow: hidden;
   color: var(--light-text-color);
 }
 
-.grid-card img {
+.products-top-week-grid-card img {
   width: 100% !important;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.card-overlay {
+.products-top-week-grid-card-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -235,13 +244,72 @@ nav {
   background-color: rgba(45, 139, 192, 0.75);
 }
 
-.card-overlay h3 {
+.products-top-week-grid-card-overlay h3 {
   margin-block-end: 25px;
 }
 
-body {
-  background-color: rgba(0, 0, 0, 0.1);
+.products-bestseller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 80px 60px;
+  text-align: center;
 }
+
+div.products-bestseller-intro h3{
+  margin-block-end: 10px;
+}
+
+.products-bestseller-grid {
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+}
+
+.products-bestseller-grid-card {
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.products-bestseller-grid-card-body {
+  padding: 25px 72px 35px 72px;
+}
+
+.products-bestseller-grid-card-body * {
+  font-weight: bold;
+}
+
+.products-bestseller-grid-card-body h5 {
+  margin-block-end: 10px;
+}
+
+.products-bestseller-grid-card-body a {
+  color: var(--second-text-color);
+}
+
+.products-bestseller-grid-card-body .products-bestseller-value {
+  margin-block-start: 15px;
+}
+
+.products-bestseller-value {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.products-bestseller-value .original-value{
+  color: var(--muted-color);
+}
+.products-bestseller-value .promotional-value{
+  color: var(--secondary-color-1);
+}
+
+
 
 /* PAGE CSS END */
 
