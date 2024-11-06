@@ -2,10 +2,88 @@
 /* https://www.figma.com/community/plugin/1335383822158048847/css-extractor */
 /* https://www.figma.com/community/plugin/1143682832255826428/color-import-export */
 
-/* TODO: make bold, semibold, light, medium vars 
-    semibold: 600
-
+/* 
+TODO: 
+make bold, semibold, medium and light vars and classes and ELIMINATE SPECIFIC FONT WEIGHTS
+make color vars and eliminate specific tag colors
 */
+
+/* OVERRIDES */
+/* Fixing layout shift from iconify */
+iconify-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  display: inline-flex;
+  justify-self: center;
+  align-self: center;
+}
+
+/* Reset default styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  color: var(--text-color);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Forms */
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* Styles according to the design sheet */
 :root {
@@ -58,6 +136,20 @@ h5 {
   line-height: 24px;
 }
 
+h6 {
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.small{
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 .btn-text {
   font-size: 14px;
   font-family: Montserrat;
@@ -96,6 +188,13 @@ a {
 /* PAGE CSS START */
 
 /* Header Section */
+
+/* TODO: REMOVE */
+header {
+  width: 100%;
+  max-width: 768px;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -132,10 +231,18 @@ nav {
   color: var(--second-text-color);
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TODO: TO REMOVE */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 768px;
 }
 
 /* Hero Section */
@@ -379,82 +486,111 @@ div.products-bestseller-intro h3 {
   color: var(--second-text-color);
 }
 
+.featured-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding-block-start: 80px;
+  padding: 80px 42px 80px 42px;
+}
+
+.featured-posts-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.featured-posts-intro h6 {
+  color: var(--primary-text-color)
+}
+
+.featured-post {
+  position: relative;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+.featured-post .badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #E74040;
+  padding: 0 10px 0 10px;
+  line-height: 24px;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.featured-post-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+}
+
+.featured-links ul {
+  display: flex;
+  gap: 15px;
+}
+
+.featured-links li{
+  display: inline;
+  color: var(--second-text-color);
+}
+
+.featured-links .google {
+  color: #8EC2F2;
+}
+
+.featured-post-body h4 {
+  font-weight: 400;
+}
+
+
+.featured-post-body p {
+  font-weight: 400;
+  color: var(--second-text-color);
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 15px 0;
+  gap: 10px;
+}
+
+.post-meta > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  button {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--second-text-color);
+    line-height: 24px;
+  }
+
+  iconify-icon {
+    font-size: 20px;
+    color: var(--primary-color);
+  }
+}
 
 /* PAGE CSS END */
 
-/* OVERRIDES */
-/* Fixing layout shift from iconify */
-iconify-icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  display: inline-flex;
-  justify-self: center;
-  align-self: center;
+iconify-icon[icon="bx:alarm"] {
+  color: var(--primary-color);
 }
 
-/* Reset default styles */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Montserrat;
-  color: var(--text-color);
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-/* Make images easier to work with */
-img,
-picture,
-video {
-  max-width: 100%;
-  display: block;
-}
-
-/* Remove default button styles */
-button {
-  border: none;
-  background: none;
-  padding: 0;
-  cursor: pointer;
-  font: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Tables */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* Forms */
-input,
-textarea {
-  border: none;
-  outline: none;
-}
-
-/* Links */
-a {
-  text-decoration: none;
-  color: inherit;
+iconify-icon[icon="ooui:chart"] {
+  color: var(--secondary-color-1);
 }
