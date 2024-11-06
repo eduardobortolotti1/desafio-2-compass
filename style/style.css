@@ -190,7 +190,7 @@ main {
 }
 
 .btn-card-products-top-week {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   color: white;
 }
 
@@ -198,7 +198,6 @@ main {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
-
 
 /* Clients Section */
 
@@ -216,7 +215,7 @@ main {
   display: grid;
   gap: 15px;
   padding: 25px 35px;
-  grid-template-rows: 550px;;
+  grid-template-rows: 550px;
   grid-auto-rows: 400px;
 }
 
@@ -254,11 +253,11 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 24px;
-  padding: 80px 60px;
+  padding: 80px 60px 32px 60px;
   text-align: center;
 }
 
-div.products-bestseller-intro h3{
+div.products-bestseller-intro h3 {
   margin-block-end: 10px;
 }
 
@@ -302,14 +301,49 @@ div.products-bestseller-intro h3{
   gap: 5px;
 }
 
-.products-bestseller-value .original-value{
+.products-bestseller-value .original-value {
   color: var(--muted-color);
 }
-.products-bestseller-value .promotional-value{
+
+.products-bestseller-value .promotional-value {
   color: var(--secondary-color-1);
 }
 
+.products-featured {
+  padding: 80px 20px 80px 20px;
+  padding-block-start: 80px !important;
+}
 
+.products-feature-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 50px 0 50px;
+  padding: 0 22px 0 0;
+}
+
+.products-feature-intro h5 {
+  color: var(--primary-text-color);
+}
+
+.products-feature-intro p {
+  font-weight: 400;
+  color: var(--second-text-color);
+}
+
+.products-featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 12px;
+  padding:50px 20px 30px 20px;
+}
+
+.products-featured-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 /* PAGE CSS END */
 
