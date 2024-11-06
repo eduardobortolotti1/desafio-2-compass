@@ -121,7 +121,6 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 30px;
 }
 
 .ham-menu-expanded a {
@@ -129,6 +128,7 @@ nav {
   font-family: inherit;
   font-weight: 600;
   line-height: inherit;
+  padding: 15px 0 15px 0;
   color: var(--second-text-color);
 }
 
@@ -237,7 +237,6 @@ main {
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
   max-height: 230px;
   padding: 60px 40px 35px 40px;
   background-color: rgba(45, 139, 192, 0.75);
@@ -335,7 +334,7 @@ div.products-bestseller-intro h3 {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   column-gap: 12px;
-  padding:50px 20px 30px 20px;
+  padding: 50px 20px 30px 20px;
 }
 
 .products-featured-grid img {
@@ -344,6 +343,42 @@ div.products-bestseller-intro h3 {
   object-fit: cover;
   object-position: center;
 }
+
+.products-featured-services {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 42px 80px 42px;
+  text-align: center;
+}
+
+.products-featured-services-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h4,
+  p {
+    color: var(--second-text-color);
+  }
+}
+
+.products-featured-services-grid-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 35px 40px 35px 40px;
+}
+
+.products-featured-services-grid-card iconify-icon {
+  font-size: 72px;
+  color: var(--primary-color);
+}
+
+.products-featured-services-grid-card p {
+  color: var(--second-text-color);
+}
+
 
 /* PAGE CSS END */
 
