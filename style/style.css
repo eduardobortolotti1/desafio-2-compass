@@ -143,11 +143,12 @@ h6 {
   line-height: 24px;
 }
 
-.small{
+.small {
   font-size: 12px;
   font-family: Montserrat;
   font-weight: 400;
   line-height: 20px;
+  color: var(--second-text-color)
 }
 
 .btn-text {
@@ -190,7 +191,7 @@ a {
 /* Header Section */
 
 /* TODO: REMOVE */
-header {
+body > * {
   width: 100%;
   max-width: 768px;
 }
@@ -502,19 +503,19 @@ div.products-bestseller-intro h3 {
 }
 
 .featured-posts-intro h6 {
-  color: var(--primary-text-color)
+  color: var(--primary-text-color);
 }
 
 .featured-post {
   position: relative;
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .featured-post .badge {
   position: absolute;
   top: 20px;
   left: 20px;
-  background-color: #E74040;
+  background-color: #e74040;
   padding: 0 10px 0 10px;
   line-height: 24px;
   color: white;
@@ -534,19 +535,17 @@ div.products-bestseller-intro h3 {
   gap: 15px;
 }
 
-.featured-links li{
+.featured-links li {
   display: inline;
-  color: var(--second-text-color);
 }
 
 .featured-links .google {
-  color: #8EC2F2;
+  color: #8ec2f2;
 }
 
 .featured-post-body h4 {
   font-weight: 400;
 }
-
 
 .featured-post-body p {
   font-weight: 400;
@@ -582,6 +581,89 @@ div.products-bestseller-intro h3 {
   iconify-icon {
     font-size: 20px;
     color: var(--primary-color);
+  }
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  padding: 55px 45px 40px 45px;
+  gap: 25px;
+  background-color: var(--light-gray-1);
+
+  ul {
+    display: flex;
+    gap: 20px;
+    color: var(--primary-color);
+    a {
+      font-size: 25px;
+    }
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 70px 45px 70px 45px;
+}
+
+.footer-nav *{
+  font-weight: 700;
+}
+
+.footer-section h5 {
+  padding-block-end: 20px;
+}
+
+.footer-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-section li a{
+  color: var(--second-text-color);
+}
+
+.input-group {
+  display: flex;
+
+  /* Applies to both the input and button, direct children of .input-group */
+  & > * {
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  input {
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 1px solid #E6E6E6;
+    border-inline-end: none;
+    background-color: #F9F9F9;
+    width: 100%;
+  }
+  button {
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+  }
+}
+
+.footer-credits {
+  padding: 25px 100px;
+  background-color: var(--light-gray-1);
+  
+  h6 {
+    text-align: center;
+    color: var(--second-text-color);
+    font-weight: 700;
   }
 }
 
