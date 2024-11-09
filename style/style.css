@@ -221,10 +221,29 @@ nav {
     font-weight: bold;
   }
 
-  a {
-    font-size: 2rem;
-    display: inline-flex;
-    padding: 4px;
+  .nav-content {
+    display: flex;
+    gap: 30px;
+    color: var(--primary-color);
+
+    a {
+      display: inline-flex;
+      padding: 5px;
+    }
+
+    ul {
+      display: flex;
+      gap: 30px;
+
+      li a {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+
+    iconify-icon {
+      font-size: 25px;
+    }
   }
 
   .nav-links {
@@ -234,25 +253,12 @@ nav {
     * {
       color: var(--second-text-color);
     }
+
     ul {
+      font-size: 14px;
       display: inline-flex;
       gap: 15px;
     }
-  }
-}
-
-.nav-content {
-  display: flex;
-  gap: 30px;
-  color: var(--primary-color);
-
-  ul {
-    display: flex;
-    gap: 30px;
-  }
-
-  iconify-icon {
-    font-size: 25px;
   }
 }
 
@@ -269,15 +275,22 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-}
 
-.ham-menu-expanded a {
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: 600;
-  line-height: inherit;
-  padding: 15px 0 15px 0;
-  color: var(--second-text-color);
+  a {
+    display: block;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: inherit;
+    padding: 15px 0 15px 0;
+    color: var(--second-text-color);
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    color: var(--hover-text-color);
+    background-color: #e6e6e6;
+  }
 }
 
 body {
@@ -303,14 +316,15 @@ section.hero {
 }
 
 .hero-content {
-  max-width: 1300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 100px;
   padding-block-start: 80px;
   border-radius: 20px;
   background-image: linear-gradient(to right, #96e9fb, #abecd6);
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
 }
 
 .hero-intro {
@@ -347,16 +361,32 @@ section.hero {
   line-height: 32px;
   background-color: var(--primary-color);
   color: var(--light-text-color);
+
+  &:hover {
+    background-color: var(--hover-text-color);
+  }
 }
 
 .btn-card-products-top-week {
   border: 1px solid #ffffff;
   color: white;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #ffffff;
+    color: var(--primary-text-color);
+  }
 }
 
 .btn-products-bestseller {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var(--hover-text-color);
+    color: var(--light-text-color);
+  }
 }
 
 /* Clients Section */
@@ -623,6 +653,14 @@ div.products-bestseller-intro h3 {
   align-items: center;
   gap: 10px;
   width: fit-content;
+
+  &:hover {
+    & > * {
+
+      color: var(--hover-text-color);
+    }
+  }
+
   button {
     font-size: 14px;
     font-weight: bold;
@@ -705,6 +743,10 @@ div.products-bestseller-intro h3 {
     border-bottom-left-radius: 0px;
     background-color: var(--primary-color);
     color: var(--light-text-color);
+
+    &:hover {
+      background-color: var(--hover-text-color);
+    }
   }
 }
 
@@ -731,16 +773,9 @@ iconify-icon[icon="ooui:chart"] {
 
 /* Making every clickable icon centered */
 
+li:has(iconify-icon),
 a:has(iconify-icon) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-li:has(iconify-icon) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
 }
 
 .container {
@@ -749,9 +784,17 @@ li:has(iconify-icon) {
 
 /* Desktop Media Queries */
 
-/* TODO: Add javascript to remove and add this class to burger menu */
-.invisible {
-  display: none;
+/* TODO: Add javascript? to remove and add this class to burger menu */
+.visible-mobile-only {
+  display: inherit !important;
+}
+
+.visible-desktop-only {
+  display: none !important;
+}
+
+.visible-desktop-xl-only {
+  display: none !important;
 }
 
 @media (min-width: 768px) {
@@ -759,6 +802,14 @@ li:has(iconify-icon) {
     /* TODO REMOVE THIS? */
     width: 100%;
     max-width: initial;
+  }
+
+  .visible-mobile-only {
+    display: none !important;
+  }
+
+  .visible-desktop-only {
+    display: inherit !important;
   }
 
   address.contact-us {
@@ -810,6 +861,12 @@ li:has(iconify-icon) {
   }
 }
 
+@media (min-width: 992px) {
+  .visible-desktop-xl-only {
+    display: block !important;
+  }
+}
+
 @media (min-width: 1200px) {
   section.hero {
     position: relative;
@@ -818,16 +875,16 @@ li:has(iconify-icon) {
     .hero-content {
       position: relative;
       padding: 0px;
+      padding-inline-start: 60px;
       gap: 0px;
       flex-direction: row;
       align-items: center;
       justify-content: flex-end;
-      
+
       img {
-        max-width: 700px;
+        max-width: 800px;
       }
     }
-
 
     .hero-intro {
       display: flex;
@@ -842,9 +899,11 @@ li:has(iconify-icon) {
     }
 
     .wrap {
+      display: flex;
+      flex-direction: row;
+      gap: 0px;
       position: relative;
       transform: translate(100px, 0px);
-      display: flex;
       justify-content: flex-end;
       align-items: center;
       width: 100%;

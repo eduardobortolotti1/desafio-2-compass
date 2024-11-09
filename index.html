@@ -15,69 +15,71 @@
   </head>
   <body>
     <header>
-      <address class="contact-us">
-        <div class="contacts">
-          <h6>
-            <iconify-icon icon="solar:phone-outline"></iconify-icon>
-            (225)555-0118
-          </h6>
-          <h6>
-            <iconify-icon icon="fontisto:email"></iconify-icon>
-            michelle.rivera@example.com
-          </h6>
-        </div>
-        <div class="message">
-          <h6>Follow Us and get a chance to win 80% off</h6>
-        </div>
-        <div class="social">
-          <h6>Follow Us :</h6>
-          <ul>
-            <li>
-              <a href=""
-                ><iconify-icon icon="akar-icons:instagram-fill"></iconify-icon
-              ></a>
-            </li>
-            <li>
-              <a href="">
-                <iconify-icon icon="line-md:youtube-filled"></iconify-icon>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <iconify-icon icon="akar-icons:twitter-fill"></iconify-icon>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </address>
+      <div class="wrap visible-desktop-only">
+        <address class="contact-us">
+          <div class="contacts">
+            <h6>
+              <iconify-icon icon="solar:phone-outline"></iconify-icon>
+              (225)555-0118
+            </h6>
+            <h6>
+              <iconify-icon icon="fontisto:email"></iconify-icon>
+              michelle.rivera@example.com
+            </h6>
+          </div>
+          <div class="message visible-desktop-xl-only">
+            <h6>Follow Us and get a chance to win 80% off</h6>
+          </div>
+          <div class="social">
+            <h6>Follow Us :</h6>
+            <ul>
+              <li>
+                <a href=""
+                  ><iconify-icon icon="akar-icons:instagram-fill"></iconify-icon
+                ></a>
+              </li>
+              <li>
+                <a href="">
+                  <iconify-icon icon="line-md:youtube-filled"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <iconify-icon icon="akar-icons:twitter-fill"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </address>
+      </div>
       <nav>
         <div class="top-menu">
           <div class="wrap">
             <div class="logo">
               <h3>Bandage</h3>
             </div>
-            <div class="nav-links">
+            <div class="nav-links visible-desktop-xl-only">
               <ul>
-                <li>Home</li>
+                <li><a href="#">Home</a></li>
                 <li>
                   <button id="nav-shop">
                     Shop
                     <iconify-icon icon="ri:arrow-down-s-line"></iconify-icon>
                   </button>
                 </li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Pages</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Pages</a></li>
               </ul>
             </div>
           </div>
           <div class="nav-content">
-            <div class="nav-login">
+            <div class="nav-login visible-desktop-xl-only">
               <h6>
                 <iconify-icon icon="mdi:user-outline"></iconify-icon>
                 Login / Register
@@ -85,28 +87,37 @@
             </div>
             <ul>
               <li>
-                <a href="">
+                <a href="#">
                   <iconify-icon icon="material-symbols:search"></iconify-icon>
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#" id="top-menu-cart">
                   <iconify-icon icon="ion:cart-outline"></iconify-icon>
+                  1
                 </a>
               </li>
-              <li>
-                <a href="">
+              <li class="visible-mobile-only">
+                <a href="#">
                   <iconify-icon icon="bx:menu-alt-right"></iconify-icon>
+                </a>
+              </li>
+              <li class="visible-desktop-only">
+                <a href="#" id="top-menu-heart">
+                  <iconify-icon icon="mdi-light:heart"></iconify-icon>
+                  1
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="ham-menu-expanded invisible mobile-menu">
-          <a href="#Home">Home</a>
-          <a href="#Product">Product</a>
-          <a href="#Pricing">Pricing</a>
-          <a href="#Contact">Contact</a>
+        <div class="ham-menu-expanded visible-mobile-only mobile-menu">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Product">Product</a></li>
+            <li><a href="#Pricing">Pricing</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -114,21 +125,21 @@
     <main>
       <section class="hero container">
         <div class="hero-content">
-            <div class="wrap">
-              <div class="hero-intro">
-                <h5>SUMMER 2020</h5>
-                <h1>NEW COLLECTION</h1>
-                <h4>
-                  We know how large objects will act, but things on a small scale.
-                </h4>
-                <button class="btn btn-text btn-primary">SHOP NOW</button>
-              </div>
-              <img
-                src="/img/hero/hero-xs.png"
-                class="hero-image"
-                alt="quirky red-haired woman"
-              />
+          <div class="wrap">
+            <div class="hero-intro">
+              <h5>SUMMER 2020</h5>
+              <h1>NEW COLLECTION</h1>
+              <h4>
+                We know how large objects will act, but things on a small scale.
+              </h4>
+              <button class="btn btn-text btn-primary">SHOP NOW</button>
             </div>
+            <img
+              src="/img/hero/hero-xs.png"
+              class="hero-image"
+              alt="quirky red-haired woman"
+            />
+          </div>
         </div>
       </section>
 
@@ -339,15 +350,8 @@
           <h2>Featured Posts</h2>
         </div>
         <article class="featured-post">
-          <div class="post-image">
-            <div class="badge">NEW</div>
-            <img src="./img/featured/posts/unsplash_xnFOY9SfcgI.png" alt="" />
-            <div class="image-buttons">
-              <button></button>
-              <button></button>
-              <button></button>
-            </div>
-          </div>
+          <div class="badge">NEW</div>
+          <img src="./img/featured/posts/unsplash_xnFOY9SfcgI.png" alt="" />
           <div class="featured-post-body">
             <div class="featured-links">
               <ul>
@@ -373,7 +377,7 @@
             </div>
             <div class="cta">
               <button class="cta-button">Learn More</button>
-              <iconfiy-icon icon="ep:arrow-right"></iconfiy-icon>
+              <iconify-icon icon="ep:arrow-right"></iconify-icon>
             </div>
           </div>
         </article>
