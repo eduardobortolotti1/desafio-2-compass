@@ -15,34 +15,91 @@
   </head>
   <body>
     <header>
-      <!-- DESKTOP CONTACT AREA -->
-      <!-- <address class="contact-us">
-            <div class="contacts">
-                <div class="phone">(225) 555-0118</div>
-                <div class="email">michelle.rivera@example.com</div>
-            </div>
-            <div class="message">
-                <p>Follow Us and get a chance to win 80% off</p>
-            </div>
-            <div class="social">
-                <p>Follow Us :</p>
-            </div>
-        </address> -->
+      <address class="contact-us">
+        <div class="contacts">
+          <h6>
+            <iconify-icon icon="solar:phone-outline"></iconify-icon>
+            (225)555-0118
+          </h6>
+          <h6>
+            <iconify-icon icon="fontisto:email"></iconify-icon>
+            michelle.rivera@example.com
+          </h6>
+        </div>
+        <div class="message">
+          <h6>Follow Us and get a chance to win 80% off</h6>
+        </div>
+        <div class="social">
+          <h6>Follow Us :</h6>
+          <ul>
+            <li>
+              <a href=""
+                ><iconify-icon icon="akar-icons:instagram-fill"></iconify-icon
+              ></a>
+            </li>
+            <li>
+              <a href="">
+                <iconify-icon icon="line-md:youtube-filled"></iconify-icon>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <iconify-icon icon="akar-icons:twitter-fill"></iconify-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </address>
       <nav>
         <div class="top-menu">
-          <div class="logo">
-            <h3>Bandage</h3>
+          <div class="wrap">
+            <div class="logo">
+              <h3>Bandage</h3>
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li>Home</li>
+                <li>
+                  <button id="nav-shop">
+                    Shop
+                    <iconify-icon icon="ri:arrow-down-s-line"></iconify-icon>
+                  </button>
+                </li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Pages</li>
+              </ul>
+            </div>
           </div>
-          <div class="menu-icons">
-            <a href="">
-              <iconify-icon icon="material-symbols:search"></iconify-icon>
-            </a>
-            <a href="">
-              <iconify-icon icon="ion:cart-outline"></iconify-icon>
-            </a>
-            <a href="">
-              <iconify-icon icon="bx:menu-alt-right"></iconify-icon>
-            </a>
+          <div class="nav-content">
+            <div class="nav-login">
+              <h6>
+                <iconify-icon icon="mdi:user-outline"></iconify-icon>
+                Login / Register
+              </h6>
+            </div>
+            <ul>
+              <li>
+                <a href="">
+                  <iconify-icon icon="material-symbols:search"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <iconify-icon icon="ion:cart-outline"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <iconify-icon icon="bx:menu-alt-right"></iconify-icon>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="ham-menu-expanded invisible mobile-menu">
@@ -55,23 +112,27 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero container">
         <div class="hero-content">
-          <h5>SUMMER 2020</h5>
-          <h1>NEW COLLECTION</h1>
-          <h4>
-            We know how large objects will act, but things on a small scale.
-          </h4>
-          <button class="btn btn-text btn-primary">SHOP NOW</button>
+            <div class="wrap">
+              <div class="hero-intro">
+                <h5>SUMMER 2020</h5>
+                <h1>NEW COLLECTION</h1>
+                <h4>
+                  We know how large objects will act, but things on a small scale.
+                </h4>
+                <button class="btn btn-text btn-primary">SHOP NOW</button>
+              </div>
+              <img
+                src="/img/hero/hero-xs.png"
+                class="hero-image"
+                alt="quirky red-haired woman"
+              />
+            </div>
         </div>
-        <img
-          src="/img/hero/hero-cover-1.png"
-          class="hero-image"
-          alt="quirky red-haired woman"
-        />
       </section>
 
-      <section class="clients">
+      <section class="clients container">
         <iconify-icon icon="fa6-brands:hooli"></iconify-icon>
         <iconify-icon icon="simple-icons:lyft"></iconify-icon>
         <iconify-icon icon="fa:pied-piper"></iconify-icon>
@@ -126,7 +187,7 @@
         </svg>
       </section>
 
-      <section class="products-top-week">
+      <section class="products-top-week container">
         <div class="products-top-week-grid-card">
           <img src="img/shop-cards/shop-cards-1.jpg" alt="" />
           <div class="products-top-week-grid-card-overlay">
@@ -158,7 +219,7 @@
 
       <!-- I love emmet abbreviations -->
       <!-- .products-bestseller-grid-card*5>img[src="./img/shop-cards/product-cover-2.png"]+div.products-bestseller-grid-card-body>h5{Graphic Design}+a{English Department}+div.products-bestseller-value>h5.original-value{$16.48}+h5.promotional-value{6.48}-->
-      <section class="products-bestseller" id="products-bestseller">
+      <section class="products-bestseller container" id="products-bestseller">
         <div class="products-bestseller-intro">
           <h3>BESTSELLER PRODUCTS</h3>
           <p>Problems trying to resolve the conflict between</p>
@@ -225,7 +286,7 @@
         </button>
       </section>
 
-      <section class="products-featured">
+      <section class="products-featured container">
         <div class="products-feature-intro">
           <h5>Featured Products</h5>
           <h2>We love what we do</h2>
@@ -244,7 +305,7 @@
         </div>
       </section>
 
-      <section class="products-featured-services">
+      <section class="products-featured-services container">
         <div class="products-featured-services-intro">
           <h4>Featured Products</h4>
           <h3>THE BEST SERVICES</h3>
@@ -272,14 +333,21 @@
         </div>
       </section>
 
-      <section class="featured-posts">
+      <section class="featured-posts container">
         <div class="featured-posts-intro">
           <h6>Practice Advice</h6>
           <h2>Featured Posts</h2>
         </div>
         <article class="featured-post">
-          <div class="badge">NEW</div>
-          <img src="./img/featured/posts/unsplash_xnFOY9SfcgI.png" alt="" />
+          <div class="post-image">
+            <div class="badge">NEW</div>
+            <img src="./img/featured/posts/unsplash_xnFOY9SfcgI.png" alt="" />
+            <div class="image-buttons">
+              <button></button>
+              <button></button>
+              <button></button>
+            </div>
+          </div>
           <div class="featured-post-body">
             <div class="featured-links">
               <ul>
@@ -305,7 +373,7 @@
             </div>
             <div class="cta">
               <button class="cta-button">Learn More</button>
-              <iconify-icon icon="ep:arrow-right"></iconify-icon>
+              <iconfiy-icon icon="ep:arrow-right"></iconfiy-icon>
             </div>
           </div>
         </article>

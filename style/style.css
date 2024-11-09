@@ -6,6 +6,9 @@
 TODO: 
 make bold, semibold, medium and light vars and classes and ELIMINATE SPECIFIC FONT WEIGHTS
 make color vars and eliminate specific tag colors
+make .nav-login invisible on lg devices
+make .message invisible on lg devices
+make .contact-us invisible on mobile devices
 */
 
 /* OVERRIDES */
@@ -148,7 +151,7 @@ h6 {
   font-family: Montserrat;
   font-weight: 400;
   line-height: 20px;
-  color: var(--second-text-color)
+  color: var(--second-text-color);
 }
 
 .btn-text {
@@ -194,6 +197,11 @@ a {
 body > * {
   width: 100%;
   max-width: 768px;
+  overflow: hidden;
+}
+
+header {
+  margin-block-end: 100px;
 }
 
 nav {
@@ -201,7 +209,6 @@ nav {
   flex-direction: column;
   gap: 40px;
   background-color: var(--light-background-color);
-  margin-block-end: 100px;
 }
 
 .top-menu {
@@ -209,12 +216,53 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 35px;
+
+  * {
+    font-weight: bold;
+  }
+
+  a {
+    font-size: 2rem;
+    display: inline-flex;
+    padding: 4px;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+
+    * {
+      color: var(--second-text-color);
+    }
+    ul {
+      display: inline-flex;
+      gap: 15px;
+    }
+  }
 }
 
-.top-menu a {
-  font-size: 2rem;
-  display: inline-flex;
-  padding: 4px;
+.nav-content {
+  display: flex;
+  gap: 30px;
+  color: var(--primary-color);
+
+  ul {
+    display: flex;
+    gap: 30px;
+  }
+
+  iconify-icon {
+    font-size: 25px;
+  }
+}
+
+.nav-login {
+  display: flex;
+
+  h6 {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .ham-menu-expanded {
@@ -248,20 +296,24 @@ main {
 
 /* Hero Section */
 
-.hero {
-  background-image: linear-gradient(to right, #96e9fb, #abecd6);
+section.hero {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 3.2%;
-  gap: 100px;
-  padding-block-start: 80px;
-  border-radius: 20px;
-  overflow: hidden;
+  justify-content: center;
+  padding: 13px;
 }
 
 .hero-content {
-  position: relative;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+  padding-block-start: 80px;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #96e9fb, #abecd6);
+}
+
+.hero-intro {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -277,7 +329,7 @@ main {
 
 .hero h4 {
   color: var(--second-text-color);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .hero h5 {
@@ -608,7 +660,7 @@ div.products-bestseller-intro h3 {
   padding: 70px 45px 70px 45px;
 }
 
-.footer-nav *{
+.footer-nav * {
   font-weight: 700;
 }
 
@@ -622,7 +674,7 @@ div.products-bestseller-intro h3 {
   gap: 10px;
 }
 
-.footer-section li a{
+.footer-section li a {
   color: var(--second-text-color);
 }
 
@@ -641,13 +693,13 @@ div.products-bestseller-intro h3 {
     border-radius: 5px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    border: 1px solid #E6E6E6;
+    border: 1px solid #e6e6e6;
     border-inline-end: none;
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
     width: 100%;
   }
   button {
-    border: 1px solid #E6E6E6;
+    border: 1px solid #e6e6e6;
     border-radius: 5px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -659,7 +711,7 @@ div.products-bestseller-intro h3 {
 .footer-credits {
   padding: 25px 100px;
   background-color: var(--light-gray-1);
-  
+
   h6 {
     text-align: center;
     color: var(--second-text-color);
@@ -675,4 +727,127 @@ iconify-icon[icon="bx:alarm"] {
 
 iconify-icon[icon="ooui:chart"] {
   color: var(--secondary-color-1);
+}
+
+/* Making every clickable icon centered */
+
+a:has(iconify-icon) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li:has(iconify-icon) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+}
+
+/* Desktop Media Queries */
+
+/* TODO: Add javascript to remove and add this class to burger menu */
+.invisible {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body > * {
+    /* TODO REMOVE THIS? */
+    width: 100%;
+    max-width: initial;
+  }
+
+  address.contact-us {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-background-color);
+    color: var(--light-text-color);
+    padding: 20px 35px;
+    /* Resetting the address tag */
+    font-style: normal;
+
+    * {
+      font-weight: bold;
+    }
+
+    .social {
+      display: flex;
+      gap: 10px;
+
+      ul {
+        display: inline-flex;
+        gap: 10px;
+        iconify-icon {
+          font-size: 15px;
+          color: var(--light-text-color);
+        }
+      }
+    }
+  }
+
+  .contacts {
+    display: flex;
+    gap: 20px;
+  }
+
+  header {
+    margin-block-end: 50px;
+  }
+
+  .top-menu {
+    .wrap {
+      display: flex;
+      gap: 120px;
+    }
+  }
+
+  section.hero {
+    padding: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.hero {
+    position: relative;
+    padding: 60px;
+
+    .hero-content {
+      position: relative;
+      padding: 0px;
+      gap: 0px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      
+      img {
+        max-width: 700px;
+      }
+    }
+
+
+    .hero-intro {
+      display: flex;
+      align-items: start;
+      padding: 0px;
+      text-align: start;
+
+      h1 {
+        font-size: 58px;
+        line-height: 80px;
+      }
+    }
+
+    .wrap {
+      position: relative;
+      transform: translate(100px, 0px);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+    }
+  }
 }
