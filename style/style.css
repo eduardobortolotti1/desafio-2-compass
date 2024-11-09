@@ -656,7 +656,6 @@ div.products-bestseller-intro h3 {
 
   &:hover {
     & > * {
-
       color: var(--hover-text-color);
     }
   }
@@ -683,6 +682,7 @@ div.products-bestseller-intro h3 {
 
   ul {
     display: flex;
+    justify-content: flex-start;
     gap: 20px;
     color: var(--primary-color);
     a {
@@ -775,7 +775,8 @@ iconify-icon[icon="ooui:chart"] {
 
 li:has(iconify-icon),
 a:has(iconify-icon) {
-  margin: auto;
+  display: flex;
+  align-items: center;
 }
 
 .container {
@@ -843,6 +844,12 @@ a:has(iconify-icon) {
   .contacts {
     display: flex;
     gap: 20px;
+
+    h6 {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
   }
 
   header {
@@ -853,6 +860,11 @@ a:has(iconify-icon) {
     .wrap {
       display: flex;
       gap: 120px;
+    }
+
+    /* Centering everything vertically */
+    * * {
+      margin: auto 0;
     }
   }
 
