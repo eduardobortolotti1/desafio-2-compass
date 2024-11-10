@@ -1,356 +1,369 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desafio 2</title>
-    <link rel="stylesheet" href="./style/style.css" />
-    <!-- Using Montserrat font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="wrap visible-desktop-only">
-        <address class="contact-us">
-          <div class="contacts">
-            <h6>
-              <iconify-icon icon="solar:phone-outline"></iconify-icon>
-              (225)555-0118
-            </h6>
-            <h6>
-              <iconify-icon icon="fontisto:email"></iconify-icon>
-              michelle.rivera@example.com
-            </h6>
-          </div>
-          <div class="message visible-desktop-xl-only">
-            <h6>Follow Us and get a chance to win 80% off</h6>
-          </div>
-          <div class="social">
-            <h6>Follow Us :</h6>
-            <ul>
-              <li>
-                <a href=""
-                  ><iconify-icon icon="akar-icons:instagram-fill"></iconify-icon
-                ></a>
-              </li>
-              <li>
-                <a href="">
-                  <iconify-icon icon="line-md:youtube-filled"></iconify-icon>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <iconify-icon icon="akar-icons:twitter-fill"></iconify-icon>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </address>
-      </div>
-      <nav>
-        <div class="top-menu">
-          <div class="wrap">
-            <div class="logo">
-              <h3>Bandage</h3>
-            </div>
-            <div class="nav-links visible-desktop-xl-only">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li>
-                  <button id="nav-shop">
-                    Shop
-                    <iconify-icon icon="ri:arrow-down-s-line"></iconify-icon>
-                  </button>
-                </li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Pages</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="nav-content">
-            <div class="nav-login visible-desktop-xl-only">
-              <h6>
-                <iconify-icon icon="mdi:user-outline"></iconify-icon>
-                Login / Register
-              </h6>
-            </div>
-            <ul>
-              <li>
-                <a href="#">
-                  <iconify-icon icon="material-symbols:search"></iconify-icon>
-                </a>
-              </li>
-              <li>
-                <a href="#" id="top-menu-cart">
-                  <iconify-icon icon="ion:cart-outline"></iconify-icon>
-                  1
-                </a>
-              </li>
-              <li class="visible-mobile-only">
-                <a href="#">
-                  <iconify-icon icon="bx:menu-alt-right"></iconify-icon>
-                </a>
-              </li>
-              <li class="visible-desktop-only">
-                <a href="#" id="top-menu-heart">
-                  <iconify-icon icon="mdi-light:heart"></iconify-icon>
-                  1
-                </a>
-              </li>
-            </ul>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desafio 2</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <!-- Using Montserrat font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="wrap visible-desktop-only">
+      <address class="contact-us">
+        <div class="contacts">
+          <h6>
+            <iconify-icon icon="solar:phone-outline"></iconify-icon>
+            (225)555-0118
+          </h6>
+          <h6>
+            <iconify-icon icon="fontisto:email"></iconify-icon>
+            michelle.rivera@example.com
+          </h6>
         </div>
-        <div class="ham-menu-expanded visible-mobile-only mobile-menu">
+        <div class="message visible-desktop-lg-only">
+          <h6>Follow Us and get a chance to win 80% off</h6>
+        </div>
+        <div class="social">
+          <h6>Follow Us :</h6>
           <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Product">Product</a></li>
-            <li><a href="#Pricing">Pricing</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li>
+              <a href=""><iconify-icon icon="akar-icons:instagram-fill"></iconify-icon></a>
+            </li>
+            <li>
+              <a href="">
+                <iconify-icon icon="mingcute:youtube-line"></iconify-icon>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <iconify-icon icon="akar-icons:twitter-fill"></iconify-icon>
+              </a>
+            </li>
           </ul>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero container">
-        <div class="hero-content">
-          <div class="wrap">
-            <div class="hero-intro">
-              <h5>SUMMER 2020</h5>
-              <h1>NEW COLLECTION</h1>
-              <h4>
-                We know how large objects will act, but things on a small scale.
-              </h4>
-              <button class="btn btn-text btn-primary">SHOP NOW</button>
-            </div>
-            <img
-              src="/img/hero/hero-xs.png"
-              class="hero-image"
-              alt="quirky red-haired woman"
-            />
+      </address>
+    </div>
+    <nav>
+      <div class="top-menu">
+        <div class="wrap">
+          <div class="logo">
+            <h3>Bandage</h3>
+          </div>
+          <div class="nav-links visible-desktop-lg-only">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li>
+                <button id="nav-shop">
+                  Shop
+                  <iconify-icon icon="ri:arrow-down-s-line"></iconify-icon>
+                </button>
+              </li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Pages</a></li>
+            </ul>
           </div>
         </div>
-      </section>
+        <div class="nav-content">
+          <div class="nav-login visible-desktop-lg-only">
+            <h6>
+              <iconify-icon icon="mdi:user-outline"></iconify-icon>
+              <a href="#">Login</a> / <a href="#">Register</a>
+            </h6>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <iconify-icon icon="material-symbols:search"></iconify-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" id="top-menu-cart">
+                <iconify-icon icon="ion:cart-outline"></iconify-icon>
+                1
+              </a>
+            </li>
+            <li class="visible-mobile-only">
+              <a href="#">
+                <iconify-icon icon="bx:menu-alt-right"></iconify-icon>
+              </a>
+            </li>
+            <li class="visible-desktop-only">
+              <a href="#" id="top-menu-heart">
+                <iconify-icon icon="mdi-light:heart"></iconify-icon>
+                1
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ham-menu-expanded visible-mobile-only mobile-menu">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Product">Product</a></li>
+          <li><a href="#Pricing">Pricing</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-      <section class="clients container">
-        <iconify-icon icon="fa6-brands:hooli"></iconify-icon>
-        <iconify-icon icon="simple-icons:lyft"></iconify-icon>
-        <iconify-icon icon="fa:pied-piper"></iconify-icon>
-        <iconify-icon icon="mage:stripe"></iconify-icon>
-        <iconify-icon icon="mdi:aws"></iconify-icon>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-        >
-          <mask id="lineMdReddit0">
-            <g fill="#fff">
-              <path
-                stroke="#fff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 9.42c4.42 0 8 2.37 8 5.29c0 2.92 -3.58 5.29 -8 5.29c-4.42 0 -8 -2.37 -8 -5.29c0 -2.92 3.58 -5.29 8 -5.29Z"
-              />
-              <circle cx="3.94" cy="11.97" r="2.24" />
-              <circle cx="20.06" cy="11.97" r="2.24" />
-              <circle cx="18.45" cy="4.23" r="1.61" />
-            </g>
+  <main>
+    <section class="hero container">
+      <div class="hero-content">
+        <div class="wrap">
+          <div class="hero-intro">
+            <h5>SUMMER 2020</h5>
+            <h1>NEW COLLECTION</h1>
+            <h4>We know how large objects will act, but things on a small scale.</h4>
+            <button class="btn btn-text btn-primary">SHOP NOW</button>
+          </div>
+          <img src="/img/hero/hero-xs.png" class="hero-image" alt="quirky red-haired woman" draggable="false" />
+        </div>
+      </div>
+    </section>
+
+    <section class="clients container">
+      <iconify-icon icon="fa6-brands:hooli"></iconify-icon>
+      <iconify-icon icon="simple-icons:lyft"></iconify-icon>
+      <iconify-icon icon="fa:pied-piper"></iconify-icon>
+      <iconify-icon icon="mage:stripe"></iconify-icon>
+      <iconify-icon icon="mdi:aws"></iconify-icon>
+      <svg height="1em" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+        <mask id="lineMdReddit0">
+          <g fill="#fff">
             <path
-              fill="none"
-              stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="0.8"
-              d="M12 8.75l1.18 -5.64l5.03 1.07"
-            />
-            <g fill-opacity="0">
-              <circle cx="8.45" cy="13.59" r="1.61" fill-opacity="1" />
-              <circle cx="15.55" cy="13.59" r="1.61" fill-opacity="1" />
-            </g>
-            <path
-              fill="none"
-              stroke="#000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="0.8"
-              d="M8.47 17.52c0 0 0.94 1.06 3.53 1.06c2.58 0 3.53 -1.06 3.53 -1.06"
-            />
-          </mask>
-          <rect
-            width="24"
-            height="24"
-            fill="currentColor"
-            mask="url(#lineMdReddit0)"
-          />
-        </svg>
-      </section>
+              d="M12 9.42c4.42 0 8 2.37 8 5.29c0 2.92 -3.58 5.29 -8 5.29c-4.42 0 -8 -2.37 -8 -5.29c0 -2.92 3.58 -5.29 8 -5.29Z"
+              stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+            <circle cx="3.94" cy="11.97" r="2.24" />
+            <circle cx="20.06" cy="11.97" r="2.24" />
+            <circle cx="18.45" cy="4.23" r="1.61" />
+          </g>
+          <path d="M12 8.75l1.18 -5.64l5.03 1.07" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="0.8" fill="none" />
+          <g fill-opacity="0">
+            <circle cx="8.45" cy="13.59" r="1.61" fill-opacity="1" />
+            <circle cx="15.55" cy="13.59" r="1.61" fill-opacity="1" />
+          </g>
+          <path d="M8.47 17.52c0 0 0.94 1.06 3.53 1.06c2.58 0 3.53 -1.06 3.53 -1.06" stroke="#000"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" fill="none" />
+        </mask>
+        <rect fill="currentColor" height="24" mask="url(#lineMdReddit0)" width="24" />
+      </svg>
+    </section>
 
-      <section class="products-top-week container">
-        <div class="products-top-week-grid-card">
-          <img src="img/shop-cards/shop-cards-1.jpg" alt="" />
-          <div class="products-top-week-grid-card-overlay">
-            <h3>Top Product Of the Week</h3>
-            <button class="btn btn-text btn-card-products-top-week">
-              EXPLORE ITEMS
-            </button>
-          </div>
+    <section class="products-top-week container">
+      <div class="grid-card">
+        <img src="img/shop-cards/shop-cards-1.jpg" alt="" />
+        <div class="card-overlay">
+          <h3>Top Product Of the Week</h3>
+          <button class="btn btn-text btn-card-products-top-week">EXPLORE ITEMS</button>
         </div>
-        <div class="products-top-week-grid-card">
-          <img src="img/shop-cards/shop-cards-2.jpg" alt="" />
-          <div class="products-top-week-grid-card-overlay">
-            <h3>Top Product Of the Week</h3>
-            <button class="btn btn-text btn-card-products-top-week">
-              EXPLORE ITEMS
-            </button>
-          </div>
+      </div>
+      <div class="grid-card">
+        <img src="img/shop-cards/shop-cards-2.jpg" alt="" />
+        <div class="card-overlay">
+          <h3>Top Product Of the Week</h3>
+          <button class="btn btn-text btn-card-products-top-week">EXPLORE ITEMS</button>
         </div>
-        <div class="products-top-week-grid-card">
-          <img src="img/shop-cards/shop-cards-3.jpg" alt="" />
-          <div class="products-top-week-grid-card-overlay">
-            <h3>Top Product Of the Week</h3>
-            <button class="btn btn-text btn-card-products-top-week">
-              EXPLORE ITEMS
-            </button>
-          </div>
+      </div>
+      <div class="grid-card">
+        <img src="img/shop-cards/shop-cards-3.jpg" alt="" />
+        <div class="card-overlay">
+          <h3>Top Product Of the Week</h3>
+          <button class="btn btn-text btn-card-products-top-week">EXPLORE ITEMS</button>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- I love emmet abbreviations -->
-      <!-- .products-bestseller-grid-card*5>img[src="./img/shop-cards/product-cover-2.png"]+div.products-bestseller-grid-card-body>h5{Graphic Design}+a{English Department}+div.products-bestseller-value>h5.original-value{$16.48}+h5.promotional-value{6.48}-->
-      <section class="products-bestseller container" id="products-bestseller">
-        <div class="products-bestseller-intro">
-          <h3>BESTSELLER PRODUCTS</h3>
-          <p>Problems trying to resolve the conflict between</p>
-        </div>
-        <div class="products-bestseller-grid">
-          <div class="products-bestseller-grid-card">
-            <img src="./img/shop-cards/product-cover-1.png" alt="" />
-            <div class="products-bestseller-grid-card-body">
-              <h5>Graphic Design</h5>
-              <a href="">English Department</a>
-              <div class="products-bestseller-value">
-                <h5 class="original-value">$16.48</h5>
-                <h5 class="promotional-value">$6.48</h5>
-              </div>
-            </div>
-          </div>
-          <div class="products-bestseller-grid-card">
-            <img src="./img/shop-cards/product-cover-2.png" alt="" />
-            <div class="products-bestseller-grid-card-body">
-              <h5>Graphic Design</h5>
-              <a href="">English Department</a>
-              <div class="products-bestseller-value">
-                <h5 class="original-value">$16.48</h5>
-                <h5 class="promotional-value">$6.48</h5>
-              </div>
-            </div>
-          </div>
-          <div class="products-bestseller-grid-card">
-            <img src="./img/shop-cards/product-cover-3.png" alt="" />
-            <div class="products-bestseller-grid-card-body">
-              <h5>Graphic Design</h5>
-              <a href="">English Department</a>
-              <div class="products-bestseller-value">
-                <h5 class="original-value">$16.48</h5>
-                <h5 class="promotional-value">$6.48</h5>
-              </div>
-            </div>
-          </div>
-          <div class="products-bestseller-grid-card">
-            <img src="./img/shop-cards/product-cover-4.png" alt="" />
-            <div class="products-bestseller-grid-card-body">
-              <h5>Graphic Design</h5>
-              <a href="">English Department</a>
-              <div class="products-bestseller-value">
-                <h5 class="original-value">$16.48</h5>
-                <h5 class="promotional-value">$6.48</h5>
-              </div>
-            </div>
-          </div>
-          <div class="products-bestseller-grid-card">
-            <img src="./img/shop-cards/product-cover-5.png" alt="" />
-            <div class="products-bestseller-grid-card-body">
-              <h5>Graphic Design</h5>
-              <a href="">English Department</a>
-              <div class="products-bestseller-value">
-                <h5 class="original-value">$16.48</h5>
-                <h5 class="promotional-value">$6.48</h5>
-              </div>
+    <!-- I love emmet abbreviations -->
+    <!-- .products-bestseller-grid-card*5>img[src="./img/shop-cards/product-cover-2.png"]+div.products-bestseller-grid-card-body>h5{Graphic Design}+a{English Department}+div.products-bestseller-value>h5.original-value{$16.48}+h5.promotional-value{6.48}-->
+    <section class="products-bestseller container" id="products-bestseller">
+      <div class="products-bestseller-intro">
+        <h4 class="visible-desktop-only">Featured Products</h4>
+        <h3>BESTSELLER PRODUCTS</h3>
+        <p>Problems trying to resolve the conflict between</p>
+      </div>
+      <div class="products-bestseller-grid">
+        <div class="products-bestseller-grid-card">
+          <img src="./img/shop-cards/product-cover-1.png" alt="" />
+          <div class="products-bestseller-grid-card-body">
+            <h5>Graphic Design</h5>
+            <a href="">English Department</a>
+            <div class="products-bestseller-value">
+              <h5 class="original-value">$16.48</h5>
+              <h5 class="promotional-value">$6.48</h5>
             </div>
           </div>
         </div>
-        <button class="btn btn-text btn-products-bestseller">
-          LOAD MORE PRODUCTS
-        </button>
-      </section>
+        <div class="products-bestseller-grid-card">
+          <img src="./img/shop-cards/product-cover-2.png" alt="" />
+          <div class="products-bestseller-grid-card-body">
+            <h5>Graphic Design</h5>
+            <a href="">English Department</a>
+            <div class="products-bestseller-value">
+              <h5 class="original-value">$16.48</h5>
+              <h5 class="promotional-value">$6.48</h5>
+            </div>
+          </div>
+        </div>
+        <div class="products-bestseller-grid-card">
+          <img src="./img/shop-cards/product-cover-3.png" alt="" />
+          <div class="products-bestseller-grid-card-body">
+            <h5>Graphic Design</h5>
+            <a href="">English Department</a>
+            <div class="products-bestseller-value">
+              <h5 class="original-value">$16.48</h5>
+              <h5 class="promotional-value">$6.48</h5>
+            </div>
+          </div>
+        </div>
+        <div class="products-bestseller-grid-card">
+          <img src="./img/shop-cards/product-cover-4.png" alt="" />
+          <div class="products-bestseller-grid-card-body">
+            <h5>Graphic Design</h5>
+            <a href="">English Department</a>
+            <div class="products-bestseller-value">
+              <h5 class="original-value">$16.48</h5>
+              <h5 class="promotional-value">$6.48</h5>
+            </div>
+          </div>
+        </div>
+        <div class="products-bestseller-grid-card">
+          <img src="./img/shop-cards/product-cover-5.png" alt="" />
+          <div class="products-bestseller-grid-card-body">
+            <h5>Graphic Design</h5>
+            <a href="">English Department</a>
+            <div class="products-bestseller-value">
+              <h5 class="original-value">$16.48</h5>
+              <h5 class="promotional-value">$6.48</h5>
+            </div>
+          </div>
+        </div>
 
-      <section class="products-featured container">
+        <!-- Visible only on desktop -->
+
+        <div class="products-bestseller-grid-card visible-desktop-only">
+          <img src="./img/shop-cards/product-cover-1.png" alt="" />
+          <div class="products-bestseller-grid-card-body">
+            <h5>Graphic Design</h5>
+            <a href="">English Department</a>
+            <div class="products-bestseller-value">
+              <h5 class="original-value">$16.48</h5>
+              <h5 class="promotional-value">$6.48</h5>
+            </div>
+          </div>
+        </div>
+        <div class="products-bestseller-grid-card visible-desktop-only">
+          <img src="./img/shop-cards/product-cover-6.png" alt="" />
+          <div class="products-bestseller-grid-card-body">
+            <h5>Graphic Design</h5>
+            <a href="">English Department</a>
+            <div class="products-bestseller-value">
+              <h5 class="original-value">$16.48</h5>
+              <h5 class="promotional-value">$6.48</h5>
+            </div>
+          </div>
+        </div>
+        <div class="products-bestseller-grid-card visible-desktop-only">
+          <img src="./img/shop-cards/product-cover-7.png" alt="" />
+          <div class="products-bestseller-grid-card-body">
+            <h5>Graphic Design</h5>
+            <a href="">English Department</a>
+            <div class="products-bestseller-value">
+              <h5 class="original-value">$16.48</h5>
+              <h5 class="promotional-value">$6.48</h5>
+            </div>
+          </div>
+        </div>
+        <div class="products-bestseller-grid-card visible-desktop-only">
+          <img src="./img/shop-cards/product-cover-8.png" alt="" />
+          <div class="products-bestseller-grid-card-body">
+            <h5>Graphic Design</h5>
+            <a href="">English Department</a>
+            <div class="products-bestseller-value">
+              <h5 class="original-value">$16.48</h5>
+              <h5 class="promotional-value">$6.48</h5>
+            </div>
+          </div>
+        </div>
+        <div class="products-bestseller-grid-card visible-desktop-only">
+          <img src="./img/shop-cards/product-cover-3.png" alt="" />
+          <div class="products-bestseller-grid-card-body">
+            <h5>Graphic Design</h5>
+            <a href="">English Department</a>
+            <div class="products-bestseller-value">
+              <h5 class="original-value">$16.48</h5>
+              <h5 class="promotional-value">$6.48</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-text btn-products-bestseller">LOAD MORE PRODUCTS</button>
+    </section>
+
+    <section class="products-featured container">
+      <div class="wrap">
         <div class="products-feature-intro">
           <h5>Featured Products</h5>
           <h2>We love what we do</h2>
-          <p>
-            Problems trying to resolve the conflict between the two major realms
-            of Classical physics: Newtonian mechanics
-          </p>
-          <p>
-            Problems trying to resolve the conflict between the two major realms
-            of Classical physics: Newtonian mechanics
-          </p>
+          <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian
+            mechanics</p>
+          <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian
+            mechanics</p>
         </div>
         <div class="products-featured-grid">
           <img src="./img/featured/products/products-featured-1.png" alt="" />
           <img src="./img/featured/products/products-featured-2.png" alt="" />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="products-featured-services container">
-        <div class="products-featured-services-intro">
-          <h4>Featured Products</h4>
-          <h3>THE BEST SERVICES</h3>
-          <p>Problems trying to resolve the conflict between</p>
+    <section class="products-featured-services container">
+      <div class="products-featured-services-intro">
+        <h4>Featured Products</h4>
+        <h3>THE BEST SERVICES</h3>
+        <p>Problems trying to resolve the conflict between</p>
+      </div>
+      <div class="products-featured-services-grid">
+        <div class="products-featured-services-grid-card">
+          <iconify-icon icon="bxs:book-reader"></iconify-icon>
+          <h3>Easy Wins</h3>
+          <p>Get your best looking smile now!</p>
         </div>
-        <div class="products-featured-services-grid">
-          <div class="products-featured-services-grid-card">
-            <iconify-icon icon="bxs:book-reader"></iconify-icon>
-            <h3>Easy Wins</h3>
-            <p>Get your best looking smile now!</p>
-          </div>
-          <div class="products-featured-services-grid-card">
-            <iconify-icon icon="carbon:book"></iconify-icon>
-            <h3>Concrete</h3>
-            <p>
-              Defalcate is most focused in helping you discover your most
-              beautiful smile
-            </p>
-          </div>
-          <div class="products-featured-services-grid-card">
-            <iconify-icon icon="uil:arrow-growth"></iconify-icon>
-            <h3>Hack Growth</h3>
-            <p>Overcame any hurdle or any other problem.</p>
-          </div>
+        <div class="products-featured-services-grid-card">
+          <iconify-icon icon="carbon:book"></iconify-icon>
+          <h3>Concrete</h3>
+          <p>Defalcate is most focused in helping you discover your most beautiful smile</p>
         </div>
-      </section>
+        <div class="products-featured-services-grid-card">
+          <iconify-icon icon="uil:arrow-growth"></iconify-icon>
+          <h3>Hack Growth</h3>
+          <p>Overcame any hurdle or any other problem.</p>
+        </div>
+      </div>
+    </section>
 
-      <section class="featured-posts container">
-        <div class="featured-posts-intro">
-          <h6>Practice Advice</h6>
-          <h2>Featured Posts</h2>
-        </div>
+    <section class="featured-posts container">
+      <div class="featured-posts-intro">
+        <h6>Practice Advice</h6>
+        <h2>Featured Posts</h2>
+      </div>
+      <div class="featured-posts-grid">
         <article class="featured-post">
-          <div class="badge">NEW</div>
+          <div class="badge badge-new">NEW</div>
           <img src="./img/featured/posts/unsplash_xnFOY9SfcgI.png" alt="" />
           <div class="featured-post-body">
             <div class="featured-links">
@@ -361,10 +374,7 @@
               </ul>
             </div>
             <h4>Loudest à la Madison #1 (L'integral)</h4>
-            <p>
-              We focus on ergonomics and meeting you where you work. It's only a
-              keystroke away.
-            </p>
+            <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
             <div class="post-meta">
               <div class="post-date">
                 <iconify-icon icon="bx:alarm"></iconify-icon>
@@ -382,7 +392,7 @@
           </div>
         </article>
         <article class="featured-post">
-          <div class="badge">NEW</div>
+          <div class="badge badge-new">NEW</div>
           <img src="./img/featured/posts/unsplash_mBQIfKlvowM.png" alt="" />
           <div class="featured-post-body">
             <div class="featured-links">
@@ -393,10 +403,7 @@
               </ul>
             </div>
             <h4>Loudest à la Madison #1 (L'integral)</h4>
-            <p>
-              We focus on ergonomics and meeting you where you work. It's only a
-              keystroke away.
-            </p>
+            <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
             <div class="post-meta">
               <div class="post-date">
                 <iconify-icon icon="bx:alarm"></iconify-icon>
@@ -413,85 +420,82 @@
             </div>
           </div>
         </article>
-      </section>
-    </main>
-    <footer>
-      <div class="socials">
-        <h3>Bandage</h3>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="socials">
+      <h3>Bandage</h3>
+      <ul>
+        <li>
+          <a href="#">
+            <iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <iconify-icon icon="akar-icons:twitter-fill"></iconify-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-content">
+      <div class="footer-section footer-nav">
         <ul>
-          <li>
-            <a href="#">
-              <iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <iconify-icon icon="akar-icons:twitter-fill"></iconify-icon>
-            </a>
-          </li>
+          <h5>Company Info</h5>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Carrier</a></li>
+          <li><a href="#">We are hiring</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
       </div>
-      <div class="footer-content">
-        <div class="footer-section footer-nav">
-          <ul>
-            <h5>Company Info</h5>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Carrier</a></li>
-            <li><a href="#">We are hiring</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer-section footer-nav">
-          <ul>
-            <h5>Legal</h5>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Carrier</a></li>
-            <li><a href="#">We are hiring</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer-section footer-nav">
-          <ul>
-            <h5>Features</h5>
-            <li><a href="#">Business Marketing</a></li>
-            <li><a href="#">User Analytic</a></li>
-            <li><a href="#">Live Chat</a></li>
-            <li><a href="#">Unlimited Support</a></li>
-          </ul>
-        </div>
-        <div class="footer-section footer-nav">
-          <ul>
-            <h5>Resources</h5>
-            <li><a href="#">IOS & Android</a></li>
-            <li><a href="#">Watch a Demo</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">API</a></li>
-          </ul>
-        </div>
-        <div class="footer-section contact-us">
-          <h5>Get In Touch</h5>
-          <div class="input-group">
-            <input
-              type="email"
-              name="email"
-              id="contact-us-email"
-              placeholder="Your Email"
-            />
-            <button type="submit">Subscribe</button>
-          </div>
-          <small class="small">Lorem ipsum dolor sit amet</small>
-        </div>
+      <div class="footer-section footer-nav">
+        <ul>
+          <h5>Legal</h5>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Carrier</a></li>
+          <li><a href="#">We are hiring</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
       </div>
-      <div class="footer-credits">
-        <h6>Made With Love By Finland All Right Reserved</h6>
+      <div class="footer-section footer-nav">
+        <ul>
+          <h5>Features</h5>
+          <li><a href="#">Business Marketing</a></li>
+          <li><a href="#">User Analytic</a></li>
+          <li><a href="#">Live Chat</a></li>
+          <li><a href="#">Unlimited Support</a></li>
+        </ul>
       </div>
-    </footer>
-    <!-- Importing icons from iconify -->
-    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-  </body>
+      <div class="footer-section footer-nav">
+        <ul>
+          <h5>Resources</h5>
+          <li><a href="#">IOS & Android</a></li>
+          <li><a href="#">Watch a Demo</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">API</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact-us">
+        <h5>Get In Touch</h5>
+        <div class="input-group">
+          <input type="email" name="email" id="contact-us-email" placeholder="Your Email" />
+          <button type="submit">Subscribe</button>
+        </div>
+        <small class="small">Lorem ipsum dolor sit amet</small>
+      </div>
+    </div>
+    <div class="footer-credits">
+      <h6>Made With Love By Finland All Right Reserved</h6>
+    </div>
+  </footer>
+  <!-- Importing icons from iconify -->
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</body>
+
 </html>
