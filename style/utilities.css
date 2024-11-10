@@ -1,0 +1,11 @@
+.visible-mobile-only {
+  display: inherit !important;
+}
+
+.visible-desktop-only {
+  display: none !important;
+}
+
+.visible-desktop-lg-only {
+  display: none !important;
+}
